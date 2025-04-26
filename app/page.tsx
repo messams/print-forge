@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
     <main>
@@ -7,7 +9,7 @@ export default function Home() {
             Your go-to platform for 3D printing files
           </p>
           <h1 className="text-4xl font-bold md:text-5xl">
-            Discover what's possible with 3D Printing
+            {`Discover what's possible with 3D Printing`}
           </h1>
           <p className="text-lg text-gray-600">
             Join our community of creators and explore a vast
@@ -23,7 +25,13 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <img src="/hero-image.png" width={350} />
+        <Image
+          src="/hero-image.png"
+          width={350}
+          height={350}
+          alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
+          className="object-cover w-full h-auto max-w-lg rounded-lg md:max-w-2xl"
+        />
       </section>
     </main>
   )
