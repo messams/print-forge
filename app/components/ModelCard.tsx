@@ -16,7 +16,7 @@ export default function ModelCard({ model }: ModelCardProps) {
                     <Image
                         width={300}
                         height={300}
-                        src={'/placeholder.png'}
+                        src={'/hero-image-square.png'}
                         alt={model.name}
                         className="absolute inset-0 object-cover w-full h-full"
                     />
